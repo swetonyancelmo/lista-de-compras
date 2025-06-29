@@ -30,7 +30,8 @@ Este projeto demonstra:
 2. Abra o arquivo `index.html` no seu navegador
 
 ```bash
-git clone https://github.com/seu-usuario/lista-compras.git
-cd lista-compras
+git clone https://github.com/swetonyancelmo/lista-de-compras.git
+cd lista-de-compras
 start [index.html](http://_vscodecontentref_/0)
 ```
+Feito por Swetony Ancelmo.
