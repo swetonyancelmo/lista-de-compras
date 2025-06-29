@@ -27,9 +27,9 @@ form {
   border-radius: 1.2rem;
   box-shadow: 0 4px 24px rgba(45, 108, 223, 0.08);
   display: flex;
-  flex-direction: column; /* alterado para coluna */
+  flex-direction: column;
   gap: 1rem;
-  align-items: stretch;   /* inputs ocupam toda a largura */
+  align-items: stretch;
 }
 
 label {
@@ -42,7 +42,7 @@ input[type="text"],
 input[type="number"],
 select {
   padding: 0.6rem 1rem;
-  border: 1.5px solid #b0b8c1; /* cor mais visível */
+  border: 1.5px solid #b0b8c1;
   border-radius: 0.6rem;
   font-size: 1rem;
   background: #f8fafc;
