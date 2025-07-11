@@ -5,20 +5,23 @@ form.addEventListener('submit', function(e) {
   e.preventDefault();
   const nome = document.getElementById('nome').value;
   const quantidade = document.getElementById('quantidade').value;
-  const grupo = document.getElementById('grupo').value;
+
+  if(nome.length < 2){
+    alert("Item inválido, digite novamente.");
+    return;
+  }
+
+  lista.classList.add("flex");
 
   const li = document.createElement('li');
   li.innerHTML = `
     <input type="checkbox" class="marcar">
-    <strong>${nome}</strong> - ${quantidade} (${grupo})
+    Item: <strong>${nome}</strong> - Quantidade: <strong>${quantidade}</strong>
   `;
   lista.appendChild(li);
 
   li.querySelector('.marcar').addEventListener('change', function() {
     li.classList.toggle('removido', this.checked);
-    if(this.checked) {
-      setTimeout(() => li.remove(), 500);
-    }
   });
   form.reset();
 });

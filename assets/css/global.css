@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,27 +7,25 @@
 }
 
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: linear-gradient(120deg, #f8fafc 0%, #e0e7ef 100%);
-  color: #222;
-  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #7294d3, #0e52cf);
+  min-height: 80vh;
 }
 
 h1 {
   text-align: center;
   margin: 2rem 0 1.5rem 0;
   font-size: 2.5rem;
-  color: #2d6cdf;
-  letter-spacing: 1px;
+  color: #f0f4fa;
 }
 
 form {
-  background: #fff;
+  background: #e0e0e9;
   max-width: 600px;
   margin: 0 auto 2rem auto;
-  padding: 2rem 2.5rem 1.5rem 2.5rem;
-  border-radius: 1.2rem;
-  box-shadow: 0 4px 24px rgba(45, 108, 223, 0.08);
+  padding: 2rem 3rem 1.5rem 3rem;
+  border-radius: 1.5rem;
+  box-shadow: -12px 10px 10px rgba(0, 0, 0, 0.08);
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -33,7 +33,7 @@ form {
 }
 
 label {
-  font-weight: 500;
+  font-weight: bold;
   color: #2d6cdf;
   margin-bottom: 0.3rem;
 }
@@ -42,10 +42,10 @@ input[type="text"],
 input[type="number"],
 select {
   padding: 0.6rem 1rem;
-  border: 1.5px solid #b0b8c1;
-  border-radius: 0.6rem;
+  border: 1.5px solid #adb7c4;
+  border-radius: 1rem;
   font-size: 1rem;
-  background: #f8fafc;
+  background: #dee8f1;
   transition: border 0.2s;
   outline: none;
 }
@@ -57,26 +57,38 @@ select:focus {
 }
 
 button[type="submit"] {
-  background: linear-gradient(90deg, #2d6cdf 60%, #5e9cff 100%);
+  background: linear-gradient(to right, #7294d3, #0e52cf);
   color: #fff;
   border: none;
   border-radius: 0.6rem;
+  margin-top: 10px;
   padding: 0.7rem 2rem;
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.2s, box-shadow 0.2s;
-  box-shadow: 0 2px 8px rgba(45, 108, 223, 0.08);
 }
 
 button[type="submit"]:hover {
   background: linear-gradient(90deg, #1b4e9b 60%, #2d6cdf 100%);
+  transform: scale(1.05);
+  transition: all ease .3s;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  display: none;
 }
 
 ul#lista-produtos {
   max-width: 600px;
   margin: 0 auto;
-  background: #fff;
+  background: #e0e0e9;
   border-radius: 1.2rem;
   box-shadow: 0 4px 24px rgba(45, 108, 223, 0.08);
   padding: 1.5rem 2rem;
@@ -107,7 +119,6 @@ ul#lista-produtos li.removido {
   text-decoration: line-through;
   color: #b0b8c1;
   background: #f0f4fa;
-  opacity: 0.7;
   transition: background 0.2s;
 }
 
